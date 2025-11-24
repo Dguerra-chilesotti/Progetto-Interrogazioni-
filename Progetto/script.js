@@ -1,5 +1,5 @@
  //variabile temporanea per conteggio giri, in futuro implementata dentro json classe
-let Guru=2;
+let Guru=1;
 function ColonnaPiu() {
    
     
