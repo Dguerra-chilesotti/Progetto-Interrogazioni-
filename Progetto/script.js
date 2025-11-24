@@ -1,6 +1,8 @@
+ //variabile temporanea per conteggio giri, in futuro implementata dentro json classe
+let Guru=2;
 function ColonnaPiu() {
-    //variabile temporanea per conteggio giri, in futuro implementata dentro json classe
-    let Guru=2;//maitake maitake guruguruguru
+   
+    
     
     let Tabella = document.getElementById("griglia");
     for (let i = 0; i < Tabella.rows.length; i++) {
