@@ -39,9 +39,9 @@
             fetch("Classi/5ib.json")
             .then(risposta => risposta.json())
             .then(classe => {
-                for(let i = 0; i<classe.length; i++){
+                for(let i = 0; i<classe.list.length; i++){
                     let riga = document.createElement("tr");
-                    riga.innerHTML = `<tr>${classe[i].name} ${classe[i].surname}</tr>`;
+                    riga.innerHTML = `<tr>${classe.list[i].name} ${classe.list[i].surname}</tr>`;
                     grigliaTable.appendChild(riga);
                 }
 
