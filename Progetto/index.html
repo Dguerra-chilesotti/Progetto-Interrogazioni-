@@ -16,6 +16,7 @@
 <body>
     <h1>TURBO INTERROGAZIONI WEBAPP</h1>
     <button id="cambiaclasse">Cambia classe</button>
+    <button onclick="ColonnaPiu()">Aggiungi giro</button>
     <div id="random">
         <p id="numero"></p>
 
@@ -26,10 +27,7 @@
             <th>giro 1</th>
             
         </tr>
-        <tr>
-            
-            
-        </tr>
+        
     </table>
     <script>
 
@@ -41,7 +39,7 @@
             .then(classe => {
                 for(let i = 0; i<classe.length; i++){
                     let riga = document.createElement("tr");
-                    riga.innerHTML = `<tr>${classe[i].name} ${classe[i].surname}</tr>`;
+                    riga.innerHTML = `<tr>${classe[i].name} ${classe[i].surname}</tr><tr></tr>`;
                     grigliaTable.appendChild(riga);
                 }
 
