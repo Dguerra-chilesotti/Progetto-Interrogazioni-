@@ -19,19 +19,33 @@
         <p id="numero"></p>
 
     </div>
-    <table id="gliglia">
+    <table id="griglia">
         <tr>
             <th>Alunno</th>
-            <th >giro 1</th>
+            <th>giro 1</th>
             <td style="height: 100%;" rowspan="2" id="bottone"><button id="add">+</button></td>
         </tr>
         <tr>
-            <td>luca</td>
+            
             
         </tr>
     </table>
     <script>
-        
+
+        const grigliaTable = document.getElementById("griglia");
+        leggiClasse();
+        function leggiClasse(){
+            fetch("Classi/5ib.json")
+            .then(risposta => risposta.json())
+            .then(classe => {
+                for(let i = 0; i<classe.length; i++){
+                    let riga = document.createElement("tr");
+                    riga.innerHTML = `<tr>${classe[i].name} ${classe[i].surname}</tr>`;
+                    grigliaTable.appendChild(riga);
+                }
+
+            });
+        }
     </script>
 </body>
 </html>
