@@ -11,7 +11,7 @@ function ColonnaPiu() {
         // If first row → create a header cell
         if (i === 0) {
             cell = document.createElement("th");
-            cell.textContent = "giro" + Guru;
+            cell.textContent = "giro" + giro;
         } else {
             cell = document.createElement("td");
             cell.textContent = "Data " + i;
@@ -19,5 +19,5 @@ function ColonnaPiu() {
 
         Tabella.rows[i].appendChild(cell);
     }
-    Guru++;
+    giro++;
 }
