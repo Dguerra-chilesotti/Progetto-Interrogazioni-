@@ -26,3 +26,7 @@ Realizzare il back end del progetto con PHP, Maria DB e SQL
 Parte 4:
 
 Documentare l'intera realizzazione del progetto, soffermandosi maggiormente sulle parti non trattate nel programma di materia.
+
+
+per info elementi usati consultare questi links:
+https://www.w3schools.com/howto/howto_css_modals.asp
