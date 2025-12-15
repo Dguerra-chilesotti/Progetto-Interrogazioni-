@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progetto</title>
-    <script src="script.js"></script>
+   
     <link rel="stylesheet" href="style.css">
     <style>
         table,th,td{
             border: 2px solid black;
             border-collapse: collapse;
         }
+        #modal{
+            display:none;
+        }
     </style>
 </head>
 <body>
+    <div id="modal">
+        <button>r</button>
+        <button>y</button>
+        <button>g</button>
+        <span onclick="close()">&times</span>
+    </div>
     <h1>TURBO INTERROGAZIONI WEBAPP</h1>
     <button id="cambiaclasse">Cambia classe</button>
     <button onclick="ColonnaPiu()">Aggiungi giro</button>
@@ -46,5 +55,6 @@
             });
         }
     </script>
+     <script src="script.js"></script>
 </body>
 </html>

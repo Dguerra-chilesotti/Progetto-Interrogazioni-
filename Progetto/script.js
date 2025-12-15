@@ -22,13 +22,10 @@ function ColonnaPiu() {
     }
     giro++;
 }
+const modalDiv = document.getElementById("modal");
 function valuta(cell) {
-    let child = window.open("", "childWindow", "width=30,heigh=20");
-    child.document.write(`
-    <div>
-        <button>r</button>
-        <button>g</button>
-        <button>y</button>
-    </div>
-    `);
+    modalDiv.style.display = "block";
+}
+function close(){
+    modalDiv.style.display = "none";
 }
