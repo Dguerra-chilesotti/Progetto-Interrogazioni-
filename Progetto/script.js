@@ -15,9 +15,14 @@ function ColonnaPiu() {
         } else {
             cell = document.createElement("td");
             cell.textContent = "Data " + i;
+            cell.setAttribute("onclick","valuta(this)");
         }
-
+        
         Tabella.rows[i].appendChild(cell);
     }
     giro++;
+}
+function valuta(cell){
+    
+    cell.style = "background-color: red;"
 }
