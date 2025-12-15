@@ -15,14 +15,20 @@ function ColonnaPiu() {
         } else {
             cell = document.createElement("td");
             cell.textContent = "Data " + i;
-            cell.setAttribute("onclick","valuta(this)");
+            cell.setAttribute("onclick", "valuta(this)");
         }
-        
+
         Tabella.rows[i].appendChild(cell);
     }
     giro++;
 }
-function valuta(cell){
-    
-    cell.style = "background-color: red;"
+function valuta(cell) {
+    let child = window.open("", "childWindow", "width=30,heigh=20");
+    child.document.write(`
+    <div>
+        <button>r</button>
+        <button>g</button>
+        <button>y</button>
+    </div>
+    `);
 }
