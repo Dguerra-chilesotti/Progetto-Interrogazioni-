@@ -5,13 +5,13 @@ function ColonnaPiu() {
   for (let i = 0; i < Tabella.rows.length; i++) {
     let cell;
 
-    // If first row → create a header cell
+    
     if (i === 0) {
       cell = document.createElement("th");
       cell.textContent = "giro" + giro;
     } else {
       cell = document.createElement("td");
-      cell.textContent = "Data " + i;
+      
       cell.setAttribute("onclick", "openModal(this)");
     }
 
@@ -25,7 +25,7 @@ const annullaBtn = document.getElementById("annullaBtn");
 let selectedCell = null;
 function setColor(color) {
   selectedCell.style = `background-color: ${color}`;
-  annullaBtn.style.display = "block";
+  annullaBtn.style.display = "inline";
 }
 function cancel() {
   selectedCell.style = "background-color: white";
@@ -34,8 +34,14 @@ function cancel() {
 function openModal(cell) {
   modalDiv.style.display = "block";
   selectedCell = cell;
+  if(getComputedStyle(selectedCell).backgroundColor === "rgb(255, 255, 255)")
+  {
+    annullaBtn.style.display = "none";
+  }
+  else annullaBtn.style.display = "inline";
 }
 function closeModal() {
+  annullaBtn.style.display = "none";
   modalDiv.style.display = "none";
 }
 const grigliaTable = document.getElementById("griglia");
