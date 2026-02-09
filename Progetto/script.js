@@ -21,17 +21,15 @@ function ColonnaPiu() {
 }
 const modalDiv = document.getElementById("modal");
 const modalContentDiv = document.getElementById("modalContent");
+const annullaBtn = document.getElementById("annullaBtn");
 let selectedCell = null;
 function setColor(color) {
   selectedCell.style = `background-color: ${color}`;
-  annullaBtn = document.createElement("button");
-  annullaBtn.setAttribute("onclick", "cancel()");
-  annullaBtn.innerHTML = "Annulla";
-  modalContentDiv.appendChild(annullaBtn);
+  annullaBtn.style.display = "block";
 }
 function cancel() {
   selectedCell.style = "background-color: white";
-  modalContentDiv.removeChild(annullaBtn);
+  annullaBtn.style.display = "none";
 }
 function openModal(cell) {
   modalDiv.style.display = "block";
