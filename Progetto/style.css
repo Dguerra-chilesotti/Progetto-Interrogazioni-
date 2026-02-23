@@ -1,12 +1,29 @@
 *{
-    background-color: white;
     
+    background-color:#e6e6e6;
 }
 h1
 {
     text-align: center;
+    color: white;
 }
 #cambiaclasse{
     border-radius: 5px;
     
+}
+#gliglia{
+    font-size: large;
+    
+    border-radius: 5px;
+}
+
+#modalContent{
+    border-radius: 15px;
+    background-color:#82D6FA;
+    
+}
+.modalbtn{
+    border-radius: 5px;
+    color: black;
+    background-color: white;
 }

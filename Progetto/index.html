@@ -13,7 +13,7 @@
       padding: 0;
       font-family: sans-serif;
     }
-
+    
     table,
     th,
     td,
@@ -24,7 +24,7 @@
     
     tr{height: 30px;}
     td{width: 50px;}
-    tr:hover,td:hover{background-color: #ddd;}
+    tr:hover{background-color: #ddd;}
     #modal {
       display: none;
       position: fixed;
@@ -72,11 +72,11 @@
 <body>
   <div id="modal">
     <div id="modalContent">
-      <button onclick="setColor('red');closeModal();">r</button>
-      <button onclick="setColor('yellow');closeModal();">y</button>
-      <button onclick="setColor('green');closeModal();">g</button>
-      <button id="annullaBtn" onclick="cancel()" >Annulla</button>
-      <button onclick="closeModal()" id="close">&times</button>
+      <button onclick="setColor('red');closeModal();"class="modalbtn">r</button>
+      <button onclick="setColor('yellow');closeModal();"class="modalbtn">y</button>
+      <button onclick="setColor('green');closeModal();"class="modalbtn">g</button>
+      <button id="annullaBtn" onclick="cancel()" class="modalbtn">Annulla</button>
+      <button onclick="closeModal()" id="close" class="modalbtn">&times</button>
     </div>
   </div>
   <h1>TURBO INTERROGAZIONI WEBAPP</h1>

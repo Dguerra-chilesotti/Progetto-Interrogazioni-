@@ -29,6 +29,7 @@ function setColor(color) {
 }
 function cancel() {
   selectedCell.style = "background-color: white";
+  selectedCell.
   annullaBtn.style.display = "none";
 }
 function openModal(cell) {
