@@ -8,7 +8,7 @@
 - Classi 
 - Giro
 
-## Relazioni individuate : 
+## Relazioni individuate :(Fatto) 
 - Voti ~ Studenti  (ogni studente può avere più voti ma un voto può essere dato solo ad uno studente)1:N
 - Classi ~ Studenti  (uno studente può avere solo una classe , ma una classe può avere più studenti)1:N
 - Giro ~ Voti (un voto può essere solo di un giro ma un giro può avere più voti )
