@@ -28,7 +28,7 @@ function setColor(color) {
   annullaBtn.style.display = "inline";
 }
 function cancel() {
-  selectedCell.style = "background-color: white";
+  selectedCell.style = "background-color: #e6e6e6";
   
   annullaBtn.style.display = "none";
   modalDiv.style.display = "none";
@@ -36,7 +36,7 @@ function cancel() {
 function openModal(cell) {
   modalDiv.style.display = "block";
   selectedCell = cell;
-  if(getComputedStyle(selectedCell).backgroundColor === "rgb(255, 255, 255)")
+  if(getComputedStyle(selectedCell).backgroundColor === "#e6e6e6")
   {
     annullaBtn.style.display = "none";
   }
