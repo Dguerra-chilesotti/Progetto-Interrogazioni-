@@ -29,8 +29,9 @@ function setColor(color) {
 }
 function cancel() {
   selectedCell.style = "background-color: white";
-  selectedCell.
+  
   annullaBtn.style.display = "none";
+  modalDiv.style.display = "none";
 }
 function openModal(cell) {
   modalDiv.style.display = "block";
